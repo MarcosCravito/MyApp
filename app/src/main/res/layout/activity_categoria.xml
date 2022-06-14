@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CategoriaActivity">
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/itemCrustaceos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Crustáceos" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/itemAves"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aves" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/itemMamiferos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mamíferos" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:backgroundTint="#C1FDD9"
+        app:menu="@menu/menu_bottom_view" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
